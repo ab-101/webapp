@@ -6,16 +6,41 @@
 		<script src="js/script.js"></script>
 	<head>
 	
-	<body style="margin:auto ; width:10%" >
-		<button type="button" onclick="revealMessage()"> Click Here! </button>
-		
-		<div id="hiddenMessage" style="display:none">
-			<p > You are going on a cruise!</p>
-			<button type="button" id="countDownButton" onclick="countDown()">10</button>
-			
-			<p id="medicinename"> Medicine Name </p>
-		</div>
+	<!-- onload="revealMessage()" -->
 	
+	<body > 
+		<div style="margin:auto ; width:10%">
+		<button  type="button" onclick="refreshall()">Generate Options</button>
+		</div>
+		
+		<div style="margin:auto ; width:10% ; padding:1%">
+		<button type="button" id="showanswerbutton" onclick="showanswer()">Show Answers</button>
+		</div>
+
+		<div id="hiddenMessage" >
+			<p><b>Q.1</b> Which of the following antiniotics belong to the drug class <span id="drugclassname"> _________ </span> </p>
+			
+			
+			<p><b>(a)</b> <span id="a"> ________ </span></p>
+			<p><b>(b)</b> <span id="b"> ________ </span></p>
+			<p><b>(c)</b> <span id="c"> ________ </span></p>
+			<p><b>(d)</b> <span id="d"> ________ </span></p>
+			<p id="answerblock" style="display:none"><b>Answer</b> <span id="answer"> ________ </span></p>
+			
+		</div>
+		
+		<div id="hiddenMessage" style="padding-top:5%">
+			<p><b>Q.2</b> What is the mechanism of action of <span id="antibioticname"> _________ </span> </p>
+			
+			
+			<p><b>(a)</b> <span id="a1"> ________ </span></p>
+			<p><b>(b)</b> <span id="b1"> ________ </span></p>
+			<p><b>(c)</b> <span id="c1"> ________ </span></p>
+			<p><b>(d)</b> <span id="d1"> ________ </span></p>
+			<p id="answerblock1" style="display:none"><b>Answer</b> <span id="answer1"> ________ </span></p>
+			
+		</div>
+		
 	
 	</body>
 	
