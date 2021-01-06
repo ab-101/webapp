@@ -1,13 +1,15 @@
 
 
-var drug_class = ["Glycylcyclines","Oxazolidinones","Lincosamides","Glycopeptides"];
+var drug_class = ["Glycylcyclines","Oxazolidinones","Lincosamides","Glycopeptides","Cyclic Lipopeptides","Short-Acting Lipoglycopeptides"];
 
-var antibiotic = ["Tigecycline","Linezolid","Clindamycin","Vancomycin"];
+var antibiotic = ["Tigecycline","Linezolid","Clindamycin","Vancomycin","daptomycin","telavancin"];
 
 var MOA = ["Bind to the bacterial ribosome at the 30S subunit, preventing the docking of transfer RNA",
 "protein synthesis inhibitors that bind to the 50S ribosomal subunit, blocking the formation of a stable 70S initiation complex and preventing translation",
 "Binds at a site on the 50S ribosome and acts by preventing protein synthesis by preventing the ",
-"Bind to terminal D-ala-D-ala chains on peptidoglycan in the cell well, preventing further elongation"];
+"Bind to terminal D-ala-D-ala chains on peptidoglycan in the cell well, preventing further elongation",
+"Inserts into the cell membrane of Gram-positive organisms, leading to the leakage of intracellular cations that maintain membrane polarization leading to rapid depolarization and cell death",
+"Bind to terminal D-ala-D-ala chains on peptidoglycan in the cell well, preventing further elongation + interferes with the cell membrane also, disrupting membrane function"];
 
 var option = ["a","b","c","d"]
 
@@ -26,7 +28,7 @@ function refresh(){
 	let temp_option = option.slice();
 	// console.log(temp)
 		
-	var length = 4
+	var length = 6
 	
 	var question_answer_position = Math.floor(Math.random() * 4);
 	
@@ -73,7 +75,7 @@ function refresh1(){
 	let temp_option = option1.slice();
 	// console.log(temp)
 		
-	var length = 4
+	var length = 6
 	
 	var question_answer_position = Math.floor(Math.random() * 4);
 	
