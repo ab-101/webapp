@@ -41,7 +41,7 @@ function refreshall(){
 
 function refresh(){
 	
-	var length = 0;
+	var selected_classes = 1;
 	
 	const selected_drugs = document.querySelectorAll('input[name="drugclasses"]'); // getting which drug classes were selected by user
 	
@@ -49,26 +49,26 @@ function refresh(){
 		if (item.checked) {
 			if(item.value=="classa"){
 				console.log("works");
-				length = 2;
-				console.log(length);
+				selected_classes = 2;
+				console.log(selected_classes);
 			}
 			
 			if(item.value=="classb"){
 				console.log("works");
-				length = 4;
-				console.log(length);
+				selected_classes = 4;
+				console.log(selected_classes);
 			}
 			
 			if(item.value=="classc"){
 				console.log("works");
-				length = 5;
-				console.log(length);
+				selected_classes = 5;
+				console.log(selected_classes);
 			}
 			
 			if(item.value=="classd"){
 				console.log("works");
-				length = 6;
-				console.log(length);
+				selected_classes = 6;
+				console.log(selected_classes);
 			}
                     
 		}
@@ -113,7 +113,11 @@ function refresh(){
 		
 
 	
-	var question_answer_position = Math.floor(Math.random() * length);
+	
+	
+	var question_answer_position = Math.floor(Math.random() * selected_classes);
+	
+	var length = 6;
 	
 	document.getElementById("questionblank").innerHTML = temp_question_blank[question_answer_position]; // getting question blank
 	
