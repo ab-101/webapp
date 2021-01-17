@@ -9,49 +9,111 @@
 	<!-- onload="revealMessage()" -->
 	
 	<body > 
+	
+		<div style="text-align: center">
+		
+		<h1>Introduction</h1>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis mauris sit amet turpis pellentesque scelerisque. Pellentesque vel sagittis massa. Quisque augue mauris, ullamcorper ullamcorper ipsum sed, dignissim ullamcorper leo. Nam accumsan metus quis lacus cursus pulvinar. In volutpat commodo eleifend. Curabitur vulputate mi vel ex dapibus auctor. Mauris rhoncus finibus mi, eu rutrum metus dictum at. Maecenas sit amet varius ipsum. Integer convallis ipsum elit, cursus mattis dui volutpat nec. Duis sapien turpis, pretium nec erat bibendum, consequat blandit metus. Maecenas ut sagittis turpis. Praesent scelerisque eros eu lobortis hendrerit.</h3>
+		
+		<h1>Instructions</h1>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis mauris sit amet turpis pellentesque scelerisque. Pellentesque vel sagittis massa. Quisque augue mauris, ullamcorper ullamcorper ipsum sed, dignissim ullamcorper leo. Nam accumsan metus quis lacus cursus pulvinar. In volutpat commodo eleifend. Curabitur vulputate mi vel ex dapibus auctor. Mauris rhoncus finibus mi, eu rutrum metus dictum at. Maecenas sit amet varius ipsum. Integer convallis ipsum elit, cursus mattis dui volutpat nec. Duis sapien turpis, pretium nec erat bibendum, consequat blandit metus. Maecenas ut sagittis turpis. Praesent scelerisque eros eu lobortis hendrerit.</h3>
+		
+		</div>
+		
+		
+		<div style="text-align: center">
+		<p>Please select your preferred drug classes:</p>
+		
+			<input type="radio" id="dclassa" name="drugclasses" value="classa">
+		<label for="classa"><b> Glycylcyclines, Oxazolidinones</b> </label>
+		<br>
+		<br>
+		
+			<input type="radio" id="dclassb" name="drugclasses" value="classb">
+		<label for="classb"><b> Glycylcyclines, Oxazolidinones, Lincosamides, Glycopeptides </b> </label>
+		<br>
+		<br>		
+			<input type="radio" id="dclassc" name="drugclasses" value="classc">
+		<label for="classc"><b> Glycylcyclines, Oxazolidinones, Lincosamides, Glycopeptides, Cyclic Lipopeptides </b> </label>
+		<br>	
+		<br>
+		
+			<input type="radio" id="dclassd" name="drugclasses" value="classd">
+		<label for="classd"><b> Glycylcyclines, Oxazolidinones, Lincosamides, Glycopeptides, Cyclic Lipopeptides, Short-Acting Lipoglycopeptides </b> </label>
+		<br>
+		
+		</div>
+		
+		<br>
+		
 		<div style="margin:auto ; width:10%">
 		<button  type="button" onclick="refreshall()">Generate Options</button>
 		</div>
 		
-		<div style="margin:auto ; width:10% ; padding:1%">
-		<button type="button" id="showanswerbutton" onclick="showanswer()">Show Answers</button>
-		</div>
+		<!-- <div style="margin:auto ; width:10% ; padding:1%"> -->
+		<!-- <button type="button" id="showanswerbutton" onclick="showanswer()">Show Answers</button> -->
+		<!-- </div> -->
 
 		<div id="hiddenMessage">
-			<p><b>Q.1</b> Which of the following antiniotics belong to the drug class <b> <span id="drugclassname"> _________ </span> </b> </p>
+			<p><b>Q.1</b> <span id="question">_______________________________</span> <b> <span id="questionblank"> _________ </span> </b> </p>
 			
 			
-			<p><b>(a)</b> <span id="a"> ________ </span></p>
-			<p><b>(b)</b> <span id="b"> ________ </span></p>
-			<p><b>(c)</b> <span id="c"> ________ </span></p>
-			<p><b>(d)</b> <span id="d"> ________ </span></p>
+			<!-- <p><b>(a)</b> <span id="a"> ________ </span></p> -->
+			<!-- <p><b>(b)</b> <span id="b"> ________ </span></p> -->
+			<!-- <p><b>(c)</b> <span id="c"> ________ </span></p> -->
+			<!-- <p><b>(d)</b> <span id="d"> ________ </span></p> -->
+			
+			
+			
+			<input type="radio" id="optiona" name="options" value="valuea">
+			<label for="valuea"><b>(a)</b> <span id="a"> ________ </span></label>
+			<br>
+			<br>
+			
+			<input type="radio" id="optionb" name="options" value="valueb">
+			<label for="valueb"><b>(b)</b> <span id="b"> ________ </span></label>
+			<br>
+			<br>
+			
+			<input type="radio" id="optionc" name="options" value="valuec">
+			<label for="valuec"><b>(c)</b> <span id="c"> ________ </span></label>
+			<br>
+			<br>
+			
+			<input type="radio" id="optiond" name="options" value="valued">
+			<label for="valued"><b>(d)</b> <span id="d"> ________ </span></label>
+			<br>
+			<br>
+			
+			<button type="button" id="showanswerbutton" onclick="showanswer()">Show Answer</button>
+			
 			<p id="answerblock" style="display:none"><b>Answer</b> <span id="answer"> ________ </span></p>
 			
 		</div>
 		
-		<div id="hiddenMessage" style="padding-top:5%">
-			<p><b>Q.2</b> What is the mechanism of action of <b> <span id="antibioticname"> _________ </span> </b> </p>
+		<!-- <div id="hiddenMessage" style="padding-top:5%"> -->
+			<!-- <p><b>Q.2</b> What is the mechanism of action of <b> <span id="antibioticname"> _________ </span> </b> </p> -->
 			
 			
-			<p><b>(a)</b> <span id="a1"> ________ </span></p>
-			<p><b>(b)</b> <span id="b1"> ________ </span></p>
-			<p><b>(c)</b> <span id="c1"> ________ </span></p>
-			<p><b>(d)</b> <span id="d1"> ________ </span></p>
-			<p id="answerblock1" style="display:none"><b>Answer</b> <span id="answer1"> ________ </span></p>
+			<!-- <p><b>(a)</b> <span id="a1"> ________ </span></p> -->
+			<!-- <p><b>(b)</b> <span id="b1"> ________ </span></p> -->
+			<!-- <p><b>(c)</b> <span id="c1"> ________ </span></p> -->
+			<!-- <p><b>(d)</b> <span id="d1"> ________ </span></p> -->
+			<!-- <p id="answerblock1" style="display:none"><b>Answer</b> <span id="answer1"> ________ </span></p> -->
 			
-		</div>
+		<!-- </div> -->
 		
-		<div id="hiddenMessage" style="padding-top:5%">
-			<p><b>Q.3</b> What is the spectrum of activity of  <b> <span id="antibioticname1"> _________ </span> </b> </p>
+		<!-- <div id="hiddenMessage" style="padding-top:5%"> -->
+			<!-- <p><b>Q.3</b> What is the spectrum of activity of  <b> <span id="antibioticname1"> _________ </span> </b> </p> -->
 			
 			
-			<p><b>(a)</b> <span id="a2"> ________ </span></p>
-			<p><b>(b)</b> <span id="b2"> ________ </span></p>
-			<p><b>(c)</b> <span id="c2"> ________ </span></p>
-			<p><b>(d)</b> <span id="d2"> ________ </span></p>
-			<p id="answerblock2" style="display:none"><b>Answer</b> <span id="answer2"> ________ </span></p>
+			<!-- <p><b>(a)</b> <span id="a2"> ________ </span></p> -->
+			<!-- <p><b>(b)</b> <span id="b2"> ________ </span></p> -->
+			<!-- <p><b>(c)</b> <span id="c2"> ________ </span></p> -->
+			<!-- <p><b>(d)</b> <span id="d2"> ________ </span></p> -->
+			<!-- <p id="answerblock2" style="display:none"><b>Answer</b> <span id="answer2"> ________ </span></p> -->
 			
-		</div>
+		<!-- </div> -->
 	
 	
 	</body>
